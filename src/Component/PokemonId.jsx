@@ -6,6 +6,7 @@ import PokemonMoves from './PokemonMoves';
 import Pokemons from './Pokemons';
 import change from '../assets/exchange.png'
 import BackgroundColorByType from './BackgroundColorByType';
+import ByTypeNameColor from './ByTypeNameColor';
 
 const PokemonId = () => {
 
@@ -69,18 +70,20 @@ const PokemonId = () => {
         <div className='pokemonIdPage'>
 
             <div className='pokemonByIdContent'>
- 
-                 <div className='pokemonByIdImgContainer'>
-                    <button className='prevBtn' onClick={previousPokemon}><i class="fa-solid fa-backward"></i></button>
-                    <img className='pokemonByIdImg' src={pokemonById?.sprites?.other["official-artwork"]["front_default"]} alt="" />
-                    <button className='nextBtn' onClick={nextPokemon}><i class="fa-solid fa-forward"></i></button>
-                </div> 
 
-                {/* <BackgroundColorByType pokemonById={pokemonById} /> */}
+                <BackgroundColorByType 
+                  pokemonById={pokemonById} 
+                  previousPokemon={previousPokemon}
+                  nextPokemon={nextPokemon}
+                
+                />
 
                 <div className='pokemonByIdInfo'>
+                   {/* <ByTypeNameColor 
+
+                   /> */}
+                   {/* <BackgroundColorByType/> */}
                     <h3 className='pokemonByIdId'> #{pokemonById.id}</h3>
-                    {/* <hr className='Nlines' /> <h3 className='pokemonByIdName'><b>{pokemonById.name?.toUpperCase()}</b></h3> <hr className='Nlines2'/> */}
                     <h3 className='pokemonByIdName'><b>{pokemonById.name?.toUpperCase()}</b></h3>
                     <div className='weightHeight'>
                         <div><h2><b>Weight: </b></h2><br /><h3>{isKilograms ? pokemonById.weight / 10 : pokemonById.weight} {isKilograms ? "Kilograms" : "Hectograms"}</h3></div>

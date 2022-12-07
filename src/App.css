@@ -1228,6 +1228,39 @@ hr{
             cursor: pointer;
         }
         
+         /*  --------------------------------------------------------------- Weight / Height --------------------------------------------------------------- */
+         
+  .weightHeight{
+    margin: 2rem auto;
+    gap: 10.5rem;
+}
+
+.changeBtn{
+   background-color: transparent;
+   border: none;
+   font-size: 22px;
+   border: 1px solid rgb(222, 222, 222);
+   border-radius: 20%;
+   padding: 1rem 1rem;
+   cursor: pointer;
+   margin-top: 0rem;
+}
+
+
+.fa-rotate{
+    font-size: 25px;
+    color: red;
+    margin-top: 5px;
+}
+  /* ----------------------------------------------------------------- Types / Abilities ------------------------------------------------------------- */
+  
+  .typeAbility{
+    display: flex;
+    flex-direction: row;
+    width: fit-content;
+    margin: 2rem auto;
+    gap: 15rem;
+}
     
     }    
       
