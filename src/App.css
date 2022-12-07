@@ -1,3 +1,4 @@
+
 *{
     padding: 0;
     margin: 0;
@@ -20,13 +21,14 @@ body{
   background-color: red;
   display: flex;
   gap: 2rem;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
   padding: 0.5rem;
 }
   
   .links{
     display: flex;
+    margin-right: 2rem;
     gap: 1.2rem;
   }
   
@@ -47,7 +49,7 @@ body{
 
   .headerImg{
     height: 30px;
-    width: 120px;
+    width: 150px;
   }
   
   .homeIcon{
@@ -177,8 +179,10 @@ body{
 
 .trainer{
     display: flex;
+    flex-direction: column;
     margin-left: .1rem;
     justify-content: center;
+    align-items: center;
 }
 
 .trainerText{
@@ -224,6 +228,14 @@ body{
         align-items: center;
     }
     
+    .inputByName{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+
     .inputPokedex{
         height: 35px;
         width: 130px;
@@ -240,7 +252,9 @@ body{
         border: 1px solid red;
         color: white;
         font-size: 18px;
+        margin-top: .5rem;
     }
+
     .pokedexButton:hover{
        border: 2px solid black;
        box-shadow: 0px 0px 5px 3px red;
@@ -615,33 +629,235 @@ hr{
 }
 
 
+/* -------------------------------------------------------------------- Pokemon By Id ------------------------------------------------------------- */
+  
+.pokemonIdPage{
+    /* background-color: aqua; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;  
+    
+}
+
+.pokemonByIdContent{
+    /* background-color: rgb(221, 187, 252); */
+    width: 85%;
+    margin-top: 6rem;
+    box-shadow: 0px 0px 5px 2px rgb(196, 196, 196);
+}
+
+/* ---------------------------------------------------------------  Image / Btns Next/Prev --------------------------------------------------- */
+.pokemonByIdImgContainer{
+    background-color: rgba(0, 0, 255, 0.176);
+    height: 100px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.prevBtn{
+ background-color: transparent;
+ border: none;
+ font-size: 40px;
+ color: rgb(255, 0, 0);
+ cursor: pointer;
+}
+
+.prevBtn:hover{
+    transform: scale(1.1);
+}
+
+.nextBtn{
+    background-color: transparent;
+    border: none;
+    font-size: 40px;
+    color: red;
+    cursor: pointer;
+}
+
+.nextBtn:hover{
+   transform: scale(1.1);
+}
+
+.pokemonByIdImg{
+    width: 200px;
+    height: 200px;
+    position: relative;
+    top: -7rem;
+}
+
+  /* -------------------------------------------------------------------------- Name / ID --------------------------------------------------------- */
+  .pokemonByIdId{
+    width: 150px;
+    height: 40px;
+    /* background-color: crimson; */
+    margin: 2rem auto 1rem;
+    border: 2px solid rgb(225, 225, 225);
+    font-size: 25px;
+}
 
 
+.pokemonByIdName{
+    font-size: 25px;
+}
+
+  /*  --------------------------------------------------------------- Weight / Height --------------------------------------------------------------- */
+  .weightHeight{
+    display: flex;
+    flex-direction: row;
+    width: fit-content;
+    margin: 2rem auto;
+    gap: 1.5rem;
+}
+
+.changeBtn{
+   background-color: transparent;
+   border: none;
+   font-size: 15px;
+   border: 1px solid rgb(222, 222, 222);
+   border-radius: 20%;
+   /* padding: .5rem 0rem; */
+   cursor: pointer;
+   margin-top: 0rem;
+}
+.changeBtn:hover{
+    border: 2px solid black;
+    box-shadow: 0px 0px 5px 3px red;
+    transform: scale(1.1);
+    background-color: rgb(255, 193, 193);
+}
+
+.fa-rotate{
+    font-size: 18px;
+    color: red;
+    margin-top: 5px;
+}
+/* .fa-rotate:hover{
+    transform: rotate(180);
+} */
+
+  /* ----------------------------------------------------------------- Types / Abilities ------------------------------------------------------------- */
+  
+  
+  .typeAbility{
+    display: flex;
+    flex-direction: column;
+    width: fit-content;
+    margin: 2rem auto;
+    gap: 1rem;
+}
+
+.types{
+    display: flex;
+    gap: 5rem;
+}
+
+.t1{
+    background-color: aqua;
+    padding: 4px 40px;
+    color: white;
+}
+.t2{
+    background-color: rgb(145, 124, 252);
+    padding: 4px 40px;
+    color: white;
+}
+
+.pokemonByIdAbilities{
+    display: flex;
+    flex-direction: column;
+}
+
+.ability{
+    /* background-color: aqua; */
+    display: flex;
+    border: 2px solid rgb(212, 212, 212);
+    text-align: center;
+    padding: 4px 20px;
+}
+
+.abilityA{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5rem;
+}
 
 
+  /* -------------------------------------------------------- Stats ------------------------------------------------------------ */
+  
+  .statsBars{
+    /* background-color: aqua; */
+    width: 90%;
+    margin: 1rem auto;
+    padding: 1rem;
+}
+
+.bar{
+    width: 80%;
+    height: 20px;
+    background-color: rgb(216, 216, 216);
+    border-radius: 1rem;
+    margin:0.5rem auto;
+}
+
+/* --------------------------------------------------------- Movements -------------------------------------------------------- */
+.movements{
+    width: 85%;
+    margin-top: 3rem;
+    display: flex;
+    flex-direction: column;
+    /* flex-wrap: wrap; */
+    box-shadow: 0px 0px 5px 2px rgb(196, 196, 196);
+    padding: 2rem;
+}
+
+.moveContainer{
+    display: flex;
+}
+
+.pokemonMoves{
+  display: flex;
+  flex-wrap: wrap;
+}
+.pokemonMove{
+    background-color: rgb(219, 219, 219);
+    margin: 5px;
+    padding: 0.5rem 1.5rem;
+    border-radius: 2rem;
+}
 
 
+/* =========================== RESPONSIVE Normal Phone size */
 
+@media screen and (min-width: 490px) {
 
+    .inputByName{    
+        flex-direction: row; 
+    }
 
-
+    .pokedexButton{
+        margin-top: 0rem;
+    }
+}
 
 
 /* =========================== Responsive Tablet */
 
-@media screen and (min-width: 800px) and (max-width: 1024px) {
+@media screen and (min-width: 800px) and (max-width: 1080px) {
     .header{
-        gap: 15rem;
+        justify-content: space-between;
       }
         
         .links{
           display: flex;
+          margin-right: 5rem;
           gap: 3rem;
         }
       
         .headerImg{
-          height: 50px;
-          width: 200px;
+          height: 60px;
+          width: 300px;
         }
         
         .homeIcon{
@@ -721,23 +937,15 @@ hr{
 }
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /* ============================== POKEDEX ================== */
+
+.trainer{
+    display: flex;
+    /* flex-direction: row; */
+    margin-left: .1rem;
+    justify-content: center;
+    align-items: center;
+}
 
 .trainerText{
     line-height: 1.5; 
@@ -756,7 +964,7 @@ hr{
 }
  
   /* -------------------- PokedexBrowsers ---------------------------- */
-  
+
     .searchByName{
         padding: 2rem 1rem ;
     }
@@ -773,6 +981,7 @@ hr{
         height: 45px;
         width: 160px;
         font-size: 20px;
+        margin-top: 0rem;
     }
 
     .pokedexSelect{
@@ -804,22 +1013,221 @@ hr{
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /* ================================== RESPONSIVE Large =========================== */
-/* @media screen and (min-width: 1024px) { */
-   
+@media screen and (min-width: 1080px) {
+    
+    .header{
+        justify-content: space-between;
+        
+      }
+        
+        .links{
+          margin-right: 5rem;  
+          gap: 4rem;
+        }
+      
+        .headerImg{
+          height: 70px;
+          width: 400px;
+          margin-right: 20rem;
+        }
+        
+        .homeIcon{  
+            height: 40px;
+            width: 40px;
+        }
+        
+        .pokedexIcon{
+            height: 40px;
+            width: 40px;
+        }
+
+        .pokemonIcon{
+            height: 40px;
+            width: 40px;
+        }
+
+        .headerBlack{
+          height: 60px;
+      }
+      
+      .circuloHeader{
+           bottom: 1.5rem; 
+           margin-right: .5rem;
+      }
+      
+      .whiteC{
+          width: 75px;
+          height: 75px;
+      }
+      
+      .grayC{
+          width: 40px;
+          height: 40px;
+          top: 17px;
+          left: 17px;
+      }
+
+        /*  ------------------------------------------------------------- Welcome Page --------------------------------------------------- */
+    
+    .inputContainer{
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        
+    }
+    
+    .logo{
+        width: 900px;
+        height: 200px;
+        margin: 2rem 0rem;
+    }
+    
+    .welcomeText{
+        margin: 2rem 0rem 0rem 0rem;
+        color: rgb(255, 0, 0);
+    }
+    
+    .trainerName{
+        /* background-color: aqua; */
+        margin-top: 3rem;
+        box-shadow: 5px 4px 20px 0.1px rgba(0, 0, 0, 0.124);
+    }
+    
+    .welcomeInput{
+        height: 54px;
+        width: 400px;
+        text-align: center;
+        /* margin: 1rem; */
+        /* border-radius: 7px; */
+        /* border: 1px solid rgb(161, 160, 160); */
+        font-size: 20PX;
+        font-weight: bolder;
+    }
+    
+    .welcomeButton{
+        /* background-color: rgb(255, 0, 0); */
+        background-color: rgb(193, 0, 0);
+        height: 54px;
+        padding: 1rem;
+        width: 200px;
+        /* border-radius: 1rem 0rem 1rem 1rem; */
+        border: none;
+        font-size: 18px;
+        letter-spacing: 1px;
+        color:white
+        /* font-weight: bold; */
+    }
+
+
+    /* ------------------------------------------------------------- Pokemon List ----------------------------------------------------- */
+        .trainer{
+            justify-content: start;
+            flex-direction: row;
+            margin-left: 2rem;
+        }
+
+        .trainerText{
+            line-height: 0; 
+            font-size: 30px;
+        }
+
+        .textFind{
+            line-height: 0;
+            margin-left: 5px; 
+            font-size: 25px;
+        }
+
+        .trainerImg{
+            width: 50px;
+            height: 50px;
+            margin-left: 0rem;
+        }
+
+
+        /* -------------------- PokedexBrowsers ---------------------------- */
+
+        .searchByName{
+            display: flex;
+            justify-content: start;
+            flex-direction: row;
+            gap: 15rem;
+            width: 100%;
+            margin: 3rem;
+            padding: 1rem 0rem ;
+        }
+        
+        .inputPokedex{
+            height: 45px;
+            width: 550px;
+            font-size: 20px;
+            margin-left: 2rem;
+        }
+        
+        .pokedexButton{
+            bottom: -.1px;
+            height: 45px;
+            width: 200px;
+            font-size: 20px;
+            margin-top: 0rem;
+        }
+
+        .pokedexSelect{
+            margin-top: 0rem;
+            height: 45px;
+            width: 220px;
+            font-size: 22px ;
+        }
+        /* -------------------------------------------- POKEDEX CARDS -------------------------------------------------------------------------  */
+    
+        .pokedexImg{
+            width: 300px;
+            height: 300px;  
+        }
+        
+        li{
+            list-style: none;
+        }
+        
+        .pageButtons{
+            /* background-color: aqua; */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100px;
+        }
+        
+        .prevButton{
+            background-color: red;
+            color: white;
+            padding: 1rem;
+            font-size: 20px;
+            font-weight: bold;
+            border-radius: 1rem;
+            margin-right: 1rem;
+            cursor: pointer;
+        }
+        
+        .pages{
+            border: none;
+            background-color: transparent;
+            margin: 0rem 0.5rem;
+            font-size: 28px;
+            cursor: pointer;
+        }
+        
+        .nextButton{
+            background-color: red;
+            color: white;
+            padding: 1rem;
+            font-size: 20px;
+            font-weight: bold;
+            border-radius: 1rem;
+            margin-left: 1rem;
+            cursor: pointer;
+        }
+        
+    
+    }    
+      
