@@ -1,0 +1,788 @@
+--------------------------------------------------- HEADER --------------------------------------------------------------
+
+
+.header{
+    display: flex;
+    background-color: rgb(193, 0, 0);
+    /* gap: 2rem; */
+    justify-content: flex-start;
+    height: 100px;
+    padding: 1rem;
+  }
+  
+  .links{
+      display: flex;
+      /* background-color: aqua; */
+      justify-content: space-evenly;
+      align-items: center;  
+      font-size: 23px;
+      text-decoration: none;
+      color: white;
+      font-weight: bolder;
+      position: relative;
+      width: 65%;
+  }
+  
+  .linksInd{
+      /* background-color: rgb(33, 34, 34); */
+      margin: 1rem;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      font-size: 23px; 
+      text-decoration: none;
+      color: white;
+      font-weight: bolder; 
+  }
+  
+  .homeIcon{
+      height: 40px;
+      width: 40px;
+  }
+  
+  .pokedexIcon{
+      height: 40px;
+      width: 40px;
+  }
+  
+  .pokemons{
+      height: 40px;
+      width: 40px;
+  }
+  
+  .pokemonIcon{
+      height: 40px;
+      width: 40px;
+  }
+  
+  .headerBlack{
+      width: 100%;
+      height: 50px;
+      background-color: black;    
+      margin-bottom: 2rem;
+  }
+  
+  .circuloHeader{
+      position: relative;
+      bottom: -4rem;
+  }
+  /*  ------------------------------------------------------------- Welcome Page --------------------------------------------------- */
+  
+  .inputContainer{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    /* background-color: aqua; */
+    /* height: 100vh; */
+    /* padding: 3rem; */
+  }
+  
+  .logo{
+      width: 900px;
+      height: 200px;
+  }
+  
+  .welcomeText{
+      margin: 2rem 0rem 0rem 0rem;
+      color: red;
+  }
+  
+  .trainerName{
+       /* background-color: aqua; */
+       margin-top: 3rem;
+       box-shadow: 5px 4px 20px 0.1px rgba(0, 0, 0, 0.124);
+  }
+  
+  .welcomeInput{
+      height: 54px;
+      width: 400px;
+      text-align: center;
+      /* margin: 1rem; */
+      /* border-radius: 7px; */
+      /* border: 1px solid rgb(161, 160, 160); */
+      font-size: 20PX;
+      font-weight: bolder;
+  }
+  
+  .welcomeButton{
+    /* background-color: rgb(255, 0, 0); */
+    background-color: rgb(193, 0, 0);
+    height: 54px;
+    padding: 1rem;
+    width: 200px;
+    /* border-radius: 1rem 0rem 1rem 1rem; */
+    border: none;
+    font-size: 18px;
+    letter-spacing: 1px;
+    color:white
+    /* font-weight: bold; */
+  }
+  
+  .footer{
+      position: relative;
+      width: 100%;
+  }
+  
+  .red{
+      width: 100%;
+      height: 68px;
+      background-color: red;
+      position: relative;
+      bottom: -15.3rem;
+  }
+  
+  .black{
+      width: 100%;
+      height: 60px;
+      background-color: black;
+      position: relative;
+      bottom: -15.3rem;
+  }
+  
+  .circulo{
+      /* position: relative;
+      left: 50%;
+      bottom: -9rem;
+      width: 50%; */
+      margin: 120px auto 0;
+      position: relative;
+      width: fit-content;
+  }
+  
+  .whiteC{
+      width: 100px;
+      height: 100px;
+      border-radius: 100%;
+      background-color: white;
+      border: 0.5rem solid black;
+  }
+  
+  .grayC{
+      width: 60px;
+      height: 60px;
+      border-radius: 100%;
+      background-color: rgb(5, 5, 5);
+      border: 0.5rem solid black;
+      position: absolute;
+      top: 21px;
+      left: 20px;
+  }
+  
+  
+  /* ------------------------------------------------------------- Pokemon List ----------------------------------------------------- */
+  
+  .trainer{
+      display: flex;
+      margin-left: 5rem;
+  }
+  
+  .trainerText{
+      margin-left: 1rem;
+      line-height: 5;
+      color: rgb(255, 0, 0);
+      /* color: rgb(193, 0, 0); */
+      font-size: 22px;
+      font-weight: bolder;
+  }
+  
+  .textFind{
+      line-height: 5;
+      margin-left: 3px;
+      font-size: 22px;
+      font-weight: bolder;
+  }
+  
+  .trainerImg{
+      width: 60px;
+      height: 60px;
+  }
+  
+  .pokedexContent{
+      display: flex;
+      flex-direction: column;
+      /* background-color: gray; */
+      justify-content: center;
+  }
+  
+  /* -------------------- PokedexBrowsers ---------------------------- */
+  
+  /* .pokedexBrosers{
+    /* background-color: aqua; */
+  
+  
+  .searchByName{
+      display: flex;
+  
+      padding: 1rem 2rem ;
+      /* background-color: blue; */
+      width: 100%;
+  }
+  
+  .inputByName{
+      margin-right: 7rem;
+      margin-left: 3rem;
+      /* background-color: blue; */
+  }
+  
+  .inputPokedex{
+      /* background-color: aqua; */
+      height: 50px;
+      width: 400px;
+      font-size: 22px;
+      border: 1px solid gray;
+  }
+  
+  .pokedexButton{
+      background-color: rgb(193, 0, 0);
+      position: relative;
+      bottom: 1px;
+      height: 50px;
+      width: 150px;
+      border: 1px solid red;
+      color: white;
+      font-size: 18px;
+  }
+  
+  .pokedexSelect{
+      /* background-color: aqua; */
+      height: 50px;
+      width: 400px;
+      font-size: 22px ;
+      padding-left: 1rem;
+  }
+  
+  
+  /* -------------------------------------------- POKEDEX CARDS -------------------------------------------------------------------------  */
+  
+  .pokemonsList{
+      /* background-color: aqua; */
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+  }
+  
+  .pokedexImg{
+      width: 250px;
+      height: 250px;  
+  }
+  .pokemonCard{
+    border: 1rem solid black;
+    border-radius: 1rem;
+    margin: 1rem;
+    text-align: center;
+    background-color: aqua;
+  }
+  
+  li{
+      list-style: none;
+  }
+  
+  .pageButtons{
+      /* background-color: aqua; */
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100px;
+  }
+  
+  .prevButton{
+      background-color: red;
+      color: white;
+      padding: 1rem;
+      font-size: 20px;
+      font-weight: bold;
+      border-radius: 1rem;
+      margin-right: 1rem;
+      cursor: pointer;
+  }
+  
+  .pages{
+      border: none;
+      background-color: transparent;
+      margin: 0rem 0.5rem;
+      font-size: 28px;
+      cursor: pointer;
+  }
+  
+  .nextButton{
+      background-color: red;
+      color: white;
+      padding: 1rem;
+      font-size: 20px;
+      font-weight: bold;
+      border-radius: 1rem;
+      margin-left: 1rem;
+      cursor: pointer;
+  }
+  
+  /*  ------------------------------------------------------------- Dynamic Card Colors ----------------------------- */
+  .green{
+      /* background-color: rgb(134, 255, 134); */
+      background-image: linear-gradient(rgb(147, 242, 250), rgb(100, 243, 100));
+      border: 1rem solid rgb(166, 242, 180);
+  }
+  .nG{
+      color:rgb(12, 108, 12);
+  }
+  .sG{
+      color: rgb(19, 161, 19); 
+  }
+  
+  
+  .brown{
+      background-image: linear-gradient(brown, rgb(176, 74, 5) );
+      border: 1rem solid rgb(176, 74, 5);
+  }
+  
+  .nB{
+      color:rgb(176, 74, 5);
+  }
+  .sB{
+      color: rgb(176, 74, 5); 
+  }
+  
+  .violet{
+      background-image: linear-gradient(rgb(122, 62, 41), rgb(224, 108, 41));
+      border: 1rem solid rgb(122, 62, 41) ;
+  }
+  
+  .nV{
+      color:rgb(122, 62, 41);
+  }
+  .sV{
+      color: rgb(122, 62, 41); 
+  }
+  
+  .purple{
+      background-image: linear-gradient(rgb(90, 15, 176), rgb(192, 56, 241));
+      border: 1rem solid rgb(142, 39, 179);
+  }
+  
+  .nP{
+      color:rgb(142, 39, 179) ;
+  }
+  
+  .sP{
+      color: rgb(142, 39, 179);
+  }
+  
+  .chocolate{
+      background-image: linear-gradient(rgb(116, 89, 22), rgb(177, 137, 37));
+      border: 1rem solid rgb(143, 71, 20);
+  }
+  
+  .nC{
+      color: rgb(116, 89, 22);
+  }
+  .sC{
+      color: rgb(116, 89, 22);
+  }
+  
+  .plate{
+      background-image: linear-gradient(rgb(82, 86, 95),rgb(118, 124, 137));
+      border: 1rem solid rgb(118, 124, 137);
+  }
+  
+  .nPl{
+      color: rgb(118, 124, 137);
+  }
+  .sPl{
+      color: rgb(118, 124, 137);
+  }
+  
+  .darkGreen{
+      background-image: linear-gradient(rgb(11, 161, 11), rgb(116, 241, 116));
+      border: 1rem solid rgb(116, 241, 116);
+  }
+  
+  .ndG{
+      color: rgb(116, 241, 116);
+  }
+  .sdG{
+      color: rgb(116, 241, 116);
+  }
+  
+  .darkBlue{
+      background-image: linear-gradient(rgb(60, 60, 149), rgb(133, 133, 215));
+      border: 1rem solid rgb(133, 133, 215);
+  }
+  
+  .ndB{
+      color: rgb(133, 133, 215);
+  }
+  .sdB{
+      color: rgb(133, 133, 215);
+  }
+  
+  .darkPlate{
+       background-image: linear-gradient(rgb(85, 85, 95),rgb(96, 96, 128));
+       border: 1rem solid rgb(96, 96, 128);
+  }
+  
+  .nbB{
+      color: rgb(96, 96, 128);
+  }
+  .sbB{
+      color: rgb(96, 96, 128);
+  }
+  
+  .orange{
+      background-image: linear-gradient(rgb(255, 111, 0),rgb(255, 181, 44));
+      border: 1rem solid rgb(255, 181, 44);
+  }
+  
+  .nO{
+      color: rgb(255, 181, 44);
+  }
+  .sO{
+      color: rgb(255, 181, 44);
+  }
+  
+  .blue{
+      background-image: linear-gradient(rgb(0, 76, 255), rgb(80, 149, 253));
+      border: 1rem solid rgb(80, 149, 253);
+  }
+  
+  .nBl{
+      color: rgb(80, 149, 253);
+  }
+  .sBl{
+      color: rgb(80, 149, 253);
+  }
+  
+  .lightBlue{
+      background-image: linear-gradient(lightBlue, rgb(255, 255, 255));
+      border: 1rem solid lightBlue;
+  }
+  
+  .nLb{
+      color: lightBlue;
+  }
+  .sLb{
+      color: lightBlue;
+  }
+  
+  .yellow{
+     background-image: linear-gradient(rgb(255, 226, 3), yellow );
+     border: 1rem solid yellow;
+  }
+  
+  .nY{
+      color: rgb(255, 226, 3);
+  }
+  .sY{
+      color: rgb(255, 226, 3);
+  }
+  
+  .bluePurple{
+      background-image: linear-gradient(rgb(65, 17, 128),rgb(184, 161, 213));
+      border: 1rem solid rgb(74, 33, 129);
+  }
+  
+  .nBp{
+      color: rgb(65, 17, 128);
+  }
+  .sBp{
+      color: rgb(65, 17, 128);
+  }
+  
+  .blueWhite{
+      background-image: linear-gradient(rgb(33, 255, 255),rgb(171, 255, 255));
+      border: 1rem solid rgb(171, 255, 255);
+  }
+  
+  .nBw{
+      color: rgb(33, 255, 255);
+  }
+  .sBw{
+      color: rgb(33, 255, 255);
+  }
+  
+  .darkLightBlue{
+      background-image: linear-gradient(rgb(44, 134, 134),rgb(144, 249, 249));
+      border: 1rem solid rgb(144, 249, 249);
+  }
+  
+  .nDbl{
+      color: rgb(144, 249, 249);
+  }
+  .sDbl{
+      color: rgb(144, 249, 249);
+  }
+  
+  .darkGray{
+      background-image: linear-gradient(rgb(41, 41, 41),rgb(138, 138, 138));
+      border: 1rem solid rgb(91, 91, 91);
+  }
+  
+  .nDgg{
+      color: rgb(91, 91, 91);
+  }
+  .sDgg{
+      color: rgb(91, 91, 91);
+  }
+  
+  .pink{
+      background-image: linear-gradient(rgb(255, 136, 156),rgb(255, 182, 194));
+      border: 1rem solid rgb(255, 182, 194);
+  }
+  
+  .nPi{
+      color: rgb(255, 182, 194);
+  }
+  .sPi{
+      color: rgb(255, 182, 194);
+  }
+  
+  
+  .unknown{
+      background-color: slateblue;
+  }
+  s
+  .darklSateBlue{
+      background-color: rebeccapurple;
+  
+  }
+  /* ---------------------------------------------------------------Card Info----------------------------------------- */
+  
+  .cardInfo{
+      background-color: white;
+      padding: 4rem 3rem 2rem 3rem;
+      width: 350px;
+      margin: -5rem 1rem 1rem 1rem;
+      /* margin: -5rem 0rem 1rem 0rem; */
+  }
+  
+  .pokemonName{
+      font-size: 25px;
+      font-weight: bold;
+  }
+  
+  .pokemonTypes{
+      font-size: 22px;
+      color: rgb(158, 157, 157);
+  }
+  
+  hr{
+      width: 350px;
+      margin-left: -3rem;
+  }
+  
+  .statsName{
+      font-size: 18px;
+      color: rgb(158, 157, 157);
+  }
+  .statsNum{
+      font-size: 22px;
+      /* color: black; */
+  }
+  
+  .stats{
+   margin-top: 1rem;
+   display: flex;  
+   justify-content: space-between; 
+  }
+  
+  .stat1{
+      display: flex;
+      flex-direction: column;
+  }
+  .stat2{
+      display: flex;
+      flex-direction: column;
+  }
+  
+  
+  /* -------------------------------------------------------------------- Pokemon By Id ------------------------------------------------------------- */
+  
+  .pokemonIdPage{
+      /* background-color: aqua; */
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;  
+      
+  }
+  
+  .pokemonByIdContent{
+      /* background-color: rgb(221, 187, 252); */
+      width: 85%;
+      margin-top: 6rem;
+      box-shadow: 0px 0px 5px 2px rgb(196, 196, 196);
+  }
+  
+  /* ---------------------------------------------------------------  Image / Btns Next/Prev --------------------------------------------------- */
+  .pokemonByIdImgContainer{
+      background-color: rgba(0, 0, 255, 0.176);
+      height: 100px;
+      display: flex;
+      justify-content: space-evenly;
+  }
+  
+  .prevBtn{
+   background-color: transparent;
+   border: none;
+   font-size: 40px;
+   color: rgb(255, 0, 0);
+   cursor: pointer;
+  }
+  
+  .nextBtn{
+      background-color: transparent;
+      border: none;
+      font-size: 40px;
+      color: red;
+      cursor: pointer;
+  }
+  
+  .pokemonByIdImg{
+      width: 200px;
+      height: 200px;
+      position: relative;
+      top: -7rem;
+  }
+  /* -------------------------------------------------------------------------PokemonById / BackgorundColor By Type -------------------------------------------- */
+  
+  
+  
+  /* -------------------------------------------------------------------------- Name / ID --------------------------------------------------------- */
+  .pokemonByIdId{
+      width: 150px;
+      height: 40px;
+      /* background-color: crimson; */
+      margin: 2rem auto 1rem;
+      border: 2px solid rgb(225, 225, 225);
+      font-size: 25px;
+  }
+  
+  
+  .pokemonByIdName{
+      font-size: 25px;
+  }
+  
+  /* .Nlines{
+      position: relative; 
+      top: 1.3rem; 
+      left: 15rem;
+      width: 250px;
+  }
+  .Nlines2{
+      position: relative;  
+      left: 48rem;
+      top: -0.7rem;
+      width: 250px;
+  } */
+  
+  /*  --------------------------------------------------------------- Weight / Height --------------------------------------------------------------- */
+  .weightHeight{
+      display: flex;
+      width: fit-content;
+      margin: 2rem auto;
+      gap: 10rem;
+  }
+  
+  .changeBtn{
+     background-color: transparent;
+     border: none;
+     font-size: 20px;
+     border: 1px solid rgb(222, 222, 222);
+     border-radius: 20%;
+     padding: 1rem;
+     cursor: pointer;
+     margin-top: 2rem;
+  }
+  .fa-rotate{
+      font-size: 30px;
+      color: red;
+      margin-top: 5px;
+  }
+  
+  /* ----------------------------------------------------------------- Types / Abilities ------------------------------------------------------------- */
+  
+  
+  .typeAbility{
+      display: flex;
+      width: fit-content;
+      margin: 2rem auto;
+      gap: 15rem;
+  }
+  
+  .types{
+      display: flex;
+      gap: 5rem;
+  }
+  
+  .t1{
+      background-color: aqua;
+      padding: 4px 40px;
+      color: white;
+  }
+  .t2{
+      background-color: rgb(145, 124, 252);
+      padding: 4px 40px;
+      color: white;
+  }
+  
+  .pokemonByIdAbilities{
+      display: flex;
+      flex-direction: column;
+  }
+  
+  .ability{
+      /* background-color: aqua; */
+      display: flex;
+      border: 2px solid rgb(212, 212, 212);
+      text-align: center;
+      padding: 4px 20px;
+  }
+  
+  .abilityA{
+      display: flex;
+      gap: 1rem;
+  }
+  
+  /* -------------------------------------------------------- Stats ------------------------------------------------------------ */
+  
+  .statsBars{
+      /* background-color: aqua; */
+      width: 90%;
+      margin: 1rem auto;
+      padding: 1rem;
+  }
+  
+  .bar{
+      width: 80%;
+      height: 20px;
+      background-color: rgb(216, 216, 216);
+      border-radius: 1rem;
+      margin:0.5rem auto;
+  }
+  
+  
+  /* --------------------------------------------------------- Movements -------------------------------------------------------- */
+  .movements{
+      width: 85%;
+      margin-top: 3rem;
+      display: flex;
+      flex-direction: column;
+      /* flex-wrap: wrap; */
+      box-shadow: 0px 0px 5px 2px rgb(196, 196, 196);
+      padding: 2rem;
+  }
+  
+  .moveContainer{
+      display: flex;
+  }
+  
+  .pokemonMoves{
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .pokemonMove{
+      background-color: rgb(219, 219, 219);
+      margin: 5px;
+      padding: 0.5rem 1.5rem;
+      border-radius: 2rem;
+  }
