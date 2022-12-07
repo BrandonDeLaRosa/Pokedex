@@ -18,7 +18,7 @@ const Welcome = () => {
         <form onSubmit={enterName} className='inputContainer'>
             <img className='logo' src={pokedex} alt="" />
             <h1 className='welcomeText'>Welcome trainer!</h1>
-            <h2>To start, please enter your name.</h2>
+            <h2 className='welcomeTextBlack'>To start, please enter your name.</h2>
             <div className='trainerName'>
                 <input className='welcomeInput' type="text" value={name} onChange={e => setName(e.target.value)} placeholder="Trainer name" required />
                 <button className='welcomeButton'>Enter</button>

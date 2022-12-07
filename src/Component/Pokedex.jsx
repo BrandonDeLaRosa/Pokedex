@@ -56,7 +56,7 @@ const Pokedex = () => {
             <div className='trainer'>
                 <img className='trainerImg' src={trainer} alt="" />
                 <h3 className='trainerText'><b>Welcome trainer:</b> {userName},</h3>
-                <h4 className='textFind'>here you can find your favorite pokemon.</h4>
+                <h4 className='textFind'>find your favorite pokemon.</h4>
             </div>
 
             <div className='pokedexBrosers'>
@@ -106,7 +106,7 @@ const Pokedex = () => {
                 <button className='nextButton' onClick={() => setPage(page + 1)}
                     disabled={page === totalPages}
                 >Next Page</button>
-            </div>
+            </div> 
 
         </div>
     );

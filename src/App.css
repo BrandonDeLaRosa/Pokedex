@@ -19,7 +19,7 @@ body{
 .header{
   background-color: red;
   display: flex;
-  gap: 1rem;
+  gap: 2rem;
   justify-content: center;
   align-items: center;
   padding: 0.5rem;
@@ -40,20 +40,34 @@ body{
       color: white;
       font-weight: bolder; 
   }
+  /* .linksInd:hover{
+    box-shadow: 0px 0px 10px 3px white; 
+    transform: scale(1.1);
+  } */
 
   .headerImg{
     height: 30px;
-    width: 80px;
+    width: 120px;
   }
   
   .homeIcon{
       height: 20px;
       width: 20px;
   }
+  .homeIcon:hover{
+    border-radius: 100%;
+    box-shadow: 0px 0px 10px 3px white; 
+    transform: scale(1.2);
+  }
   
   .pokedexIcon{
       height: 20px;
       width: 20px;
+  }
+  .pokedexIcon:hover{
+    border-radius: 100%;
+    box-shadow: 0px 0px 10px 3px white; 
+    transform: scale(1.2);
   }
   
   .pokemons{
@@ -64,6 +78,11 @@ body{
   .pokemonIcon{
       height: 20px;
       width: 20px;
+  }
+  .pokemonIcon:hover{
+    border-radius: 100%;
+    box-shadow: 0px 0px 10px 3px white; 
+    transform: scale(1.2);
   }
 
   .headerBlack{
@@ -111,6 +130,7 @@ body{
     display: flex;
     flex-direction: column;
     align-items: center;
+    /* padding: .5rem; */
   }
   
   .logo{
@@ -132,7 +152,7 @@ body{
 
 .welcomeInput{
     height: 54px;
-    width: 400px;
+    width: 250px;
     text-align: center;
     font-size: 20PX;
     font-weight: bolder;
@@ -142,10 +162,664 @@ body{
   background-color: rgb(193, 0, 0);
   height: 54px;
   padding: 1rem;
-  width: 200px;
+  width: 90px;
   border: none;
   font-size: 18px;
   letter-spacing: 1px;
-  color:white
-  
+  color:white 
 }
+.welcomeButton:hover{
+    border: 1px solid black;
+    box-shadow: 0px 0px 10px 3px red;
+}
+
+/* ============================== POKEDEX ================== */
+
+.trainer{
+    display: flex;
+    margin-left: .1rem;
+    justify-content: center;
+}
+
+.trainerText{
+    margin-left: 0rem;
+    line-height: 3.5; 
+    color: rgb(255, 0, 0);
+    font-size: 12px;
+}
+
+.textFind{
+    line-height: 3.5;
+    margin-left: 1px; 
+    font-size: 12px;
+}
+
+.trainerImg{
+    width: 20px;
+    height: 20px;
+}
+
+.pokedexContent{
+    display: flex;
+    flex-direction: column;
+    /* background-color: gray; */
+    justify-content: center;
+}
+
+ 
+  /* -------------------- PokedexBrowsers ---------------------------- */
+  
+  .pokedexBrosers{
+    /* background-color: aqua; */
+    display: flex;
+    flex-direction: column;
+    justify-content:center ;
+    align-items: center;
+  }
+    .searchByName{
+        display: flex;
+        flex-direction: column;
+        padding: 1rem 1rem ;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .inputPokedex{
+        height: 35px;
+        width: 130px;
+        font-size: 15px;
+        border: 1px solid gray;
+    }
+    
+    .pokedexButton{
+        background-color: rgb(193, 0, 0);
+        position: relative;
+        bottom: -2px;
+        height: 35px;
+        width: 100px;
+        border: 1px solid red;
+        color: white;
+        font-size: 18px;
+    }
+    .pokedexButton:hover{
+       border: 2px solid black;
+       box-shadow: 0px 0px 5px 3px red;
+    }
+    
+
+    .pokedexSelect{
+        /* background-color: aqua; */
+        margin-top: 1rem;
+        height: 35px;
+        width: 130px;
+        font-size: 22px ;
+        padding-left: 1rem;
+    }
+      /* -------------------------------------------- POKEDEX CARDS -------------------------------------------------------------------------  */
+  
+  .pokemonsList{
+    /* background-color: aqua; */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.pokedexImg{
+    width: 200px;
+    height: 200px;  
+}
+.pokemonCard{
+  width: 360px;  
+  border-radius: 1rem;
+  margin: 1rem 0rem;
+  text-align: center;
+}
+
+li{
+    list-style: none;
+}
+
+.pageButtons{
+    /* background-color: aqua; */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+}
+
+.prevButton{
+    background-color: red;
+    color: white;
+    padding: .4rem;
+    font-size: 15px;
+    font-weight: bold;
+    border-radius: 1rem;
+    margin-right: 1rem;
+    cursor: pointer;
+    border: none;
+}
+.prevButton:hover{  
+    border: 2px solid black;
+    box-shadow: 0px 0px 5px 3px red;   
+} 
+
+
+.pages{
+    border: none;
+    background-color: transparent;
+    margin: 0rem 0.5rem;
+    font-size: 18px;
+    cursor: pointer;
+}
+.pages:hover{
+    /* border: 2px solid black; */
+    /* border-radius: 100%; */
+    box-shadow: 0px 0px 5px 3px red; 
+}
+
+.nextButton{
+    background-color: red;
+    color: white;
+    padding: .4rem;
+    font-size: 15px;
+    font-weight: bold;
+    border-radius: 1rem;
+    margin-left: 1rem;
+    cursor: pointer;
+    border: none;
+} 
+.nextButton:hover{
+    
+    border: 2px solid black;
+    box-shadow: 0px 0px 5px 3px red;
+     
+} 
+
+/*  ------------------------------------------------------------- Dynamic Card Colors ----------------------------- */
+.green{
+    /* background-color: rgb(134, 255, 134); */
+    background-image: linear-gradient(rgb(147, 242, 250), rgb(100, 243, 100));
+    border: 1rem solid rgb(166, 242, 180);
+}
+.nG{
+    color:rgb(12, 108, 12);
+}
+.sG{
+    color: rgb(19, 161, 19); 
+}
+
+
+.brown{
+    background-image: linear-gradient(brown, rgb(176, 74, 5) );
+    border: 1rem solid rgb(176, 74, 5);
+}
+
+.nB{
+    color:rgb(176, 74, 5);
+}
+.sB{
+    color: rgb(176, 74, 5); 
+}
+
+.violet{
+    background-image: linear-gradient(rgb(122, 62, 41), rgb(224, 108, 41));
+    border: 1rem solid rgb(122, 62, 41) ;
+}
+
+.nV{
+    color:rgb(122, 62, 41);
+}
+.sV{
+    color: rgb(122, 62, 41); 
+}
+
+.purple{
+    background-image: linear-gradient(rgb(90, 15, 176), rgb(192, 56, 241));
+    border: 1rem solid rgb(142, 39, 179);
+}
+
+.nP{
+    color:rgb(142, 39, 179) ;
+}
+
+.sP{
+    color: rgb(142, 39, 179);
+}
+
+.chocolate{
+    background-image: linear-gradient(rgb(116, 89, 22), rgb(177, 137, 37));
+    border: 1rem solid rgb(143, 71, 20);
+}
+
+.nC{
+    color: rgb(116, 89, 22);
+}
+.sC{
+    color: rgb(116, 89, 22);
+}
+
+.plate{
+    background-image: linear-gradient(rgb(82, 86, 95),rgb(118, 124, 137));
+    border: 1rem solid rgb(118, 124, 137);
+}
+
+.nPl{
+    color: rgb(118, 124, 137);
+}
+.sPl{
+    color: rgb(118, 124, 137);
+}
+
+.darkGreen{
+    background-image: linear-gradient(rgb(11, 161, 11), rgb(116, 241, 116));
+    border: 1rem solid rgb(116, 241, 116);
+}
+
+.ndG{
+    color: rgb(116, 241, 116);
+}
+.sdG{
+    color: rgb(116, 241, 116);
+}
+
+.darkBlue{
+    background-image: linear-gradient(rgb(60, 60, 149), rgb(133, 133, 215));
+    border: 1rem solid rgb(133, 133, 215);
+}
+
+.ndB{
+    color: rgb(133, 133, 215);
+}
+.sdB{
+    color: rgb(133, 133, 215);
+}
+
+.darkPlate{
+     background-image: linear-gradient(rgb(85, 85, 95),rgb(96, 96, 128));
+     border: 1rem solid rgb(96, 96, 128);
+}
+
+.nbB{
+    color: rgb(96, 96, 128);
+}
+.sbB{
+    color: rgb(96, 96, 128);
+}
+
+.orange{
+    background-image: linear-gradient(rgb(255, 111, 0),rgb(255, 181, 44));
+    border: 1rem solid rgb(255, 181, 44);
+}
+
+.nO{
+    color: rgb(255, 181, 44);
+}
+.sO{
+    color: rgb(255, 181, 44);
+}
+
+.blue{
+    background-image: linear-gradient(rgb(0, 76, 255), rgb(80, 149, 253));
+    border: 1rem solid rgb(80, 149, 253);
+}
+
+.nBl{
+    color: rgb(80, 149, 253);
+}
+.sBl{
+    color: rgb(80, 149, 253);
+}
+
+.lightBlue{
+    background-image: linear-gradient(lightBlue, rgb(255, 255, 255));
+    border: 1rem solid lightBlue;
+}
+
+.nLb{
+    color: lightBlue;
+}
+.sLb{
+    color: lightBlue;
+}
+
+.yellow{
+   background-image: linear-gradient(rgb(255, 226, 3), yellow );
+   border: 1rem solid yellow;
+}
+
+.nY{
+    color: rgb(255, 226, 3);
+}
+.sY{
+    color: rgb(255, 226, 3);
+}
+
+.bluePurple{
+    background-image: linear-gradient(rgb(65, 17, 128),rgb(184, 161, 213));
+    border: 1rem solid rgb(74, 33, 129);
+}
+
+.nBp{
+    color: rgb(65, 17, 128);
+}
+.sBp{
+    color: rgb(65, 17, 128);
+}
+
+.blueWhite{
+    background-image: linear-gradient(rgb(33, 255, 255),rgb(171, 255, 255));
+    border: 1rem solid rgb(171, 255, 255);
+}
+
+.nBw{
+    color: rgb(33, 255, 255);
+}
+.sBw{
+    color: rgb(33, 255, 255);
+}
+
+.darkLightBlue{
+    background-image: linear-gradient(rgb(44, 134, 134),rgb(144, 249, 249));
+    border: 1rem solid rgb(144, 249, 249);
+}
+
+.nDbl{
+    color: rgb(144, 249, 249);
+}
+.sDbl{
+    color: rgb(144, 249, 249);
+}
+
+.darkGray{
+    background-image: linear-gradient(rgb(41, 41, 41),rgb(138, 138, 138));
+    border: 1rem solid rgb(91, 91, 91);
+}
+
+.nDgg{
+    color: rgb(91, 91, 91);
+}
+.sDgg{
+    color: rgb(91, 91, 91);
+}
+
+.pink{
+    background-image: linear-gradient(rgb(255, 136, 156),rgb(255, 182, 194));
+    border: 1rem solid rgb(255, 182, 194);
+}
+
+.nPi{
+    color: rgb(255, 182, 194);
+}
+.sPi{
+    color: rgb(255, 182, 194);
+}
+
+
+.unknown{
+    background-color: slateblue;
+}
+s
+.darklSateBlue{
+    background-color: rebeccapurple;
+
+}
+
+  /* ---------------------------------------------------------------Card Info----------------------------------------- */
+  
+  .cardInfo{
+    background-color: white;
+    padding: 4rem 3rem 2rem 3rem;
+    width: 328px;
+    /* margin: -5rem 1rem 1rem 1rem; */
+    /* margin: -5rem 0rem 1rem 0rem; */
+}
+
+.pokemonName{
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.pokemonTypes{
+    font-size: 22px;
+    color: rgb(158, 157, 157);
+}
+
+hr{
+    width: 330px;
+    margin-left: -3rem;
+}
+
+.statsName{
+    font-size: 18px;
+    color: rgb(158, 157, 157);
+}
+.statsNum{
+    font-size: 22px;
+    /* color: black; */
+}
+
+.stats{
+ margin-top: 1rem;
+ display: flex;  
+ justify-content: space-between; 
+}
+
+.stat1{
+    display: flex;
+    flex-direction: column;
+}
+.stat2{
+    display: flex;
+    flex-direction: column;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* =========================== Responsive Tablet */
+
+@media screen and (min-width: 800px) and (max-width: 1024px) {
+    .header{
+        gap: 15rem;
+      }
+        
+        .links{
+          display: flex;
+          gap: 3rem;
+        }
+      
+        .headerImg{
+          height: 50px;
+          width: 200px;
+        }
+        
+        .homeIcon{
+            height: 30px;
+            width: 30px;
+        }
+        
+        .pokedexIcon{
+            height: 30px;
+            width: 30px;
+        }
+
+        .pokemonIcon{
+            height: 30px;
+            width: 30px;
+        }
+
+        .headerBlack{
+          height: 50px;
+      }
+      
+      .circuloHeader{
+           bottom: 1.5rem; 
+           margin-right: 1rem;
+      }
+      
+      .whiteC{
+          width: 60px;
+          height: 60px;
+      }
+      
+      .grayC{
+          width: 25px;
+          height: 25px;
+          top: 17px;
+          left: 17px;
+      }
+      
+      /* -------------------------------------Welcome */
+        .logo{
+          width: 500px;
+          height: 100px;
+      }
+         
+      .welcomeText{
+          margin: 2rem 0rem 0rem 0rem;
+          color: red;
+          font-size: 45px;
+      }
+
+      .welcomeTextBlack{
+        font-size: 26px;
+      }
+
+      .welcomeInput{
+          height: 54px;
+          width: 400px;
+          text-align: center;
+          font-size: 20PX;
+          font-weight: bolder;
+      }
+      
+      .welcomeButton{
+        background-color: rgb(193, 0, 0);
+        height: 54px;
+        padding: 1rem;
+        width: 150px;
+        border: none;
+        font-size: 18px;
+        letter-spacing: 1px;
+        color:white 
+      }
+      .welcomeButton:hover{
+          border: 1px solid black;
+          box-shadow: 0px 0px 10px 3px red;
+      }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ============================== POKEDEX ================== */
+
+.trainerText{
+    line-height: 1.5; 
+    font-size: 20px;
+}
+
+.textFind{
+    line-height: 1.5;
+    margin-left: 5px; 
+    font-size: 20px;
+}
+
+.trainerImg{
+    width: 30px;
+    height: 30px;
+}
+ 
+  /* -------------------- PokedexBrowsers ---------------------------- */
+  
+    .searchByName{
+        padding: 2rem 1rem ;
+    }
+    
+    .inputPokedex{
+        height: 45px;
+        width: 290px;
+        font-size: 20px;
+       
+    }
+    
+    .pokedexButton{
+        bottom: -.1px;
+        height: 45px;
+        width: 160px;
+        font-size: 20px;
+    }
+
+    .pokedexSelect{
+        margin-top: 2rem;
+        height: 45px;
+        width: 180px;
+        font-size: 22px ;
+    }
+      /* -------------------------------------------- POKEDEX CARDS -------------------------------------------------------------------------  */
+  
+
+.pokemonCard{
+  margin: 1rem 1rem;
+}
+
+.prevButton{
+    padding: .6rem;
+    font-size: 18px;
+}
+
+.pages{
+    font-size: 20px;
+}
+
+.nextButton{
+    padding: .6rem;
+    font-size: 18px;
+} 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ================================== RESPONSIVE Large =========================== */
+/* @media screen and (min-width: 1024px) { */
+   
