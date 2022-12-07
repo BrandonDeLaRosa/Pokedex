@@ -3,10 +3,7 @@ import React, { useEffect, useState } from 'react';
 import { useNavigate, useParams } from 'react-router-dom';
 import Abilities from './Abilities';
 import PokemonMoves from './PokemonMoves';
-import Pokemons from './Pokemons';
-import change from '../assets/exchange.png'
-import BackgroundColorByType from './BackgroundColorByType';
-import ByTypeNameColor from './ByTypeNameColor';
+import BackgroundColorByType from './DinamicColors/BackgroundColorByType';
 
 const PokemonId = () => {
 
@@ -79,10 +76,6 @@ const PokemonId = () => {
                 />
 
                 <div className='pokemonByIdInfo'>
-                   {/* <ByTypeNameColor 
-
-                   /> */}
-                   {/* <BackgroundColorByType/> */}
                     <h3 className='pokemonByIdId'> #{pokemonById.id}</h3>
                     <h3 className='pokemonByIdName'><b>{pokemonById.name?.toUpperCase()}</b></h3>
                     <div className='weightHeight'>
