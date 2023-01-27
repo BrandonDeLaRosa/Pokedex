@@ -96,7 +96,7 @@ const PokemonId = () => {
                             </div>
                         </div>
 
-                        <div className='pokemonByIdAbilities'>
+                         <div className='pokemonByIdAbilities'>
                             <h2>Abilities</h2><br />
                             <div className='abilityA'>
                                 {
