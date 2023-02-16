@@ -146,8 +146,11 @@ body{
     color: red;
 }
 
+.welcomeTextBlack{
+    padding: 1rem;
+}
+
 .trainerName{
-     /* background-color: aqua; */
      margin-top: 3rem;
      box-shadow: 5px 4px 20px 0.1px rgba(0, 0, 0, 0.124);
 }
@@ -272,10 +275,11 @@ body{
       /* -------------------------------------------- POKEDEX CARDS -------------------------------------------------------------------------  */
   
   .pokemonsList{
-    /* background-color: aqua; */
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    max-height: 600px;
+    overflow-y: scroll;
 }
 
 .pokedexImg{
@@ -300,7 +304,30 @@ li{
     justify-content: center;
     align-items: center;
     height: 100px;
+    width: 100%;
+    max-width: 365px;
 }
+
+.pagesContainer{
+    width: 108px;
+    /* background-color: aqua; */
+    max-width: 108px;
+    overflow-x: scroll;
+    display: flex;
+
+}
+
+.pagesContainer::-webkit-scrollbar{
+    width: 3px;
+    height: 5px;
+  }
+  .pagesContainer::-webkit-scrollbar-track{
+    background-color: rgba(226, 231, 248, 0.651);
+  }
+  .pagesContainer::-webkit-scrollbar-thumb{
+    background: #ff0000;
+    border-radius: 5rem;
+  }
 
 .prevButton{
     background-color: red;
@@ -327,6 +354,12 @@ li{
     cursor: pointer;
 }
 .pages:hover{
+    /* border: 2px solid black; */
+    /* border-radius: 100%; */
+    box-shadow: 0px 0px 5px 3px red; 
+}
+
+.pages:focus{
     /* border: 2px solid black; */
     /* border-radius: 100%; */
     box-shadow: 0px 0px 5px 3px red; 
@@ -685,6 +718,21 @@ hr{
     height: 200px;
     position: relative;
     top: -7rem;
+    animation-name: upDwn;
+  animation-iteration-count: infinite;
+  animation-duration: 2s;
+}
+
+@keyframes upDwn {
+    0% {
+        transform: translateY(0px);
+      }
+      50% {
+        transform: translateY(5px);
+      }
+      to{
+        transform: translateY(0px);
+      }
 }
 
   /* -------------------------------------------------------------------------- Name / ID --------------------------------------------------------- */
@@ -1122,6 +1170,14 @@ hr{
 
 
     /* ------------------------------------------------------------- Pokemon List ----------------------------------------------------- */
+    .pokemonsList{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        max-height: 1000px;
+        overflow-y: scroll;
+    }
+
         .trainer{
             justify-content: start;
             flex-direction: row;
@@ -1263,4 +1319,4 @@ hr{
 }
     
     }    
-      
+ 

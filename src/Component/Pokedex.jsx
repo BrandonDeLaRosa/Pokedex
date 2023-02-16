@@ -80,6 +80,22 @@ const Pokedex = () => {
                     </select>
                 </form>
 
+                <div className='pageButtons'>
+                <button className='prevButton' onClick={() => setPage(page - 1)}
+                    disabled={page === 1}
+                >Prev Page</button>
+
+                <div className='pagesContainer'>
+                        {numbers.map(number => (
+                    <button className='pages' onClick={() => setPage(number)}>{number}</button>
+                ))}
+                </div>
+
+                <button className='nextButton' onClick={() => setPage(page + 1)}
+                    disabled={page === totalPages}
+                >Next Page</button>
+            </div> 
+
             </div>
             <div className='pokemonsList'>
                 {
@@ -94,19 +110,7 @@ const Pokedex = () => {
                 }
             </div>
 
-            <div className='pageButtons'>
-                <button className='prevButton' onClick={() => setPage(page - 1)}
-                    disabled={page === 1}
-                >Prev Page</button>
-
-                {numbers.map(number => (
-                    <button className='pages' onClick={() => setPage(number)}>{number}</button>
-                ))}
-
-                <button className='nextButton' onClick={() => setPage(page + 1)}
-                    disabled={page === totalPages}
-                >Next Page</button>
-            </div> 
+            
 
         </div>
     );
